@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/visual.css">
+    <title>Projeto Calculadora</title>
+</head>
+<body>
+    <main class="principal">
+        <form action="" class="form">
+            <section class="secao_valor1">
+                <label for="">I%:</label>
+                <input class="valor1" type="text" maxlength="10">
+            </section>
+            <section class="secao_valor2">
+                <label for="">Valor a receber:</label>
+                <input class="valor2" type="text">
+            </section>
+            <button class="eventoApertar">Calcular</button>
+            <section>
+                <p>Resultado:</p>
+                <span class="resultado"></span>
+            </section>
+        </form>
+        <button class="botaolimpa" onclick="limpaResultado()">Limpar</button>
+    </main>
+    <script src="assets/main.js"></script>
+</body>
+</html>

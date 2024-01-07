@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto&display=swap');
+
+:root {
+    --cor_section: #000080;
+    --cor_fundo: #f5f5f5;
+    --cor_borda: #000000;
+    --cor_letra: #ffffff;
+    --cor_letra_input: #000000;
+    --cor_botao: #008000;
+    --cor_botao_limpa: #FF0000;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--cor_letra);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    background: var(--cor_fundo);
+}
+
+.principal {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--cor_section);
+    border: 3px solid var(--cor_borda);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    border: 3px solid var(--cor_borda);
+    border-radius: 15px;
+    transition: border 0.5s ease;
+    padding-left: 5px;
+    color: var(--cor_letra_input);
+}
+
+input:hover {
+    border: 3px solid var(--cor_fundo);
+}
+
+.botaolimpa {
+    margin-top: 20px;
+    align-self: flex-end;
+    background: var(--cor_fundo);
+    transition: color 0.5s ease;
+    transition: border 0.5s ease;
+}
+
+.botaolimpa:hover {
+    background: var(--cor_botao_limpa);
+    border: 3px solid var(--cor_botao_limpa);
+    color: var(--cor_letra);
+}
+
+button {
+    padding: 3px;
+    color: var(--cor_letra_input);
+    background: var(--cor_fundo);
+    border: 3px solid var(--cor_borda);
+    border-radius:20px;
+    transition: border 0.5s ease;
+    transition: background 0.5s ease;
+}
+
+button:hover {
+    border: 3px solid var(--cor_botao);
+    background: var(--cor_botao);
+}
+
+div {
+    display: flex;
+}
+
+footer {
+    padding-top: 20px;
+}
