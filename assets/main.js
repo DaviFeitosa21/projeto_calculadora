@@ -21,7 +21,7 @@ function calcular() {
             return
         }
 
-        //conversão dos valores para números inteiros
+        //conversão dos valores para Float
         parseFloat(valor1)
         parseFloat(valor2)
 
