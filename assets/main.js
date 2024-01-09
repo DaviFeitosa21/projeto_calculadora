@@ -32,12 +32,12 @@ function calcular() {
 
         //Resultado do calculo
         if(resultado.innerHTML === '') {
-            resultado.innerHTML = `<div>R$<p>${calculaNumero2.toFixed(2)}</p></div> Y: ${calculaNumero1}%`
+            resultado.innerHTML = `R$<p>${calculaNumero2.toFixed(2)}</p>`
         }
         else {
             const valorAtual = parseFloat(resultado.querySelector('p').textContent)
             const novoCalculo = valorAtual + calculaNumero2
-            resultado.innerHTML = `<div>R$<p>${novoCalculo.toFixed(2)}</p></div> Y: ${calculaNumero1}%`
+            resultado.innerHTML = `R$<p>${novoCalculo.toFixed(2)}</p>`
         }
         
     }
