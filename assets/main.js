@@ -8,7 +8,7 @@ function calcular() {
     function receberEventoCaptura(evento) {
         evento.preventDefault()
 
-        //captura dos valor no HTML
+        //captura dos valores no HTML
         const valor1 = captura1.querySelector('.valor1').value
         const valor2 = captura2.querySelector('.valor2').value
 
