@@ -26,17 +26,18 @@ function calcular() {
         parseFloat(valor2)
 
         //calculos realizados com base nas entradas
-        const calculaNumero1 = 100 - valor1
-        const calculaNumero2 = valor2 / calculaNumero1
+        const porcentagem = valor1 / 100
+        const calculaNumero1 = 100 - (100 * porcentagem)
+        const calculaNumero2 = (valor2 / calculaNumero1) * 100
 
         //Resultado do calculo
         if(resultado.innerHTML === '') {
-            resultado.innerHTML = `<div>R$<p>${calculaNumero2.toFixed(2)}</p></div>`
+            resultado.innerHTML = `<div>R$<p>${calculaNumero2.toFixed(2)}</p></div> Y: ${calculaNumero1}%`
         }
         else {
             const valorAtual = parseFloat(resultado.querySelector('p').textContent)
             const novoCalculo = valorAtual + calculaNumero2
-            resultado.innerHTML = `<div>R$<p>${novoCalculo.toFixed(2)}</p></div>`
+            resultado.innerHTML = `<div>R$<p>${novoCalculo.toFixed(2)}</p></div> Y: ${calculaNumero1}%`
         }
         
     }
